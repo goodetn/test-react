@@ -20,7 +20,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "node-test": "node server/puppeteer/lazada.test.node.js",
+    "test": "react-scripts test --testPathIgnorePatterns=.*e2e.test.js",
+    "test:e2e": "react-scripts test --testPathPattern=.components/puppeteer/*e2e.test.js$",
     "coverage": "react-scripts test --env=jsdom --watchAll=false --coverage",
     "eject": "react-scripts eject"
   },
@@ -41,5 +43,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "puppeteer": "^18.1.0"
   }
 }
