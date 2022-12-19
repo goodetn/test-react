@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.scss";
+import "./index.scss";
 
 function App() {
   return <div className="App-header">learn test</div>;
