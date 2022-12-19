@@ -3,10 +3,9 @@ import { Calculator } from ".";
 describe("tinh-dien-tich", () => {
   it("tinh-dt-hinh-vuong", () => {
     // setup:
-    const calculator = new Calculator();
 
     // run:
-    const area = calculator.areaSquare(10);
+    const area = Calculator.areaSquare(10);
 
     // assert:
     expect(area).toBe(100);
